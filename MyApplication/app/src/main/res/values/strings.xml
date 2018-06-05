@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="sample_text">My First Android App</string>
+    <string name="user_tv">UserName</string>
+    <string name="pass_tv">Password</string>
+    <string name="login_btn">Log Me In !</string>
+</resources>

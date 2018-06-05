@@ -1,0 +1,32 @@
+My App
+    app folder : it is the main application module
+        libs
+            All the libs that you want to be used in your application
+        build
+            Once you build the app , we get a apk that is present over here
+        main
+            java
+                It will have all your applications Bussiness Logic..
+                It includes : Activity, Android componenets & your DB interaction
+            res (it stands for resources) - UI screens , images , your icons
+                drawable - All the images,wallpaper. How do you identify which image to be shown?
+                values - They simply add a new file which holds static text
+                mipmap - Stores the icon, it has multiple folders, hdpi(700 X 400),mdpi (500 X 300), xhdpi
+                -- Also Have
+                raw - digital files , songs & videos
+                menu - we will discuss when we cover menu's
+            --AndroidManifest.xml
+                It is File
+                How will Android come to know , which UI page to be shown first
+                Which layout to be opened first ?
+
+
+
+
+AVD : Android Virtual Device
+
+Activity is for all the classes
+
+but if you want : backward compatiblity
+
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.adityadua.intentssession4demo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intents Demo"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="87dp"
+        android:id="@+id/userNameEditText"
+        android:layout_marginEnd="18dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:hint="UserName Goes here !!" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/userNameEditText"
+        android:layout_alignStart="@+id/userNameEditText"
+        android:layout_marginTop="55dp"
+        android:id="@+id/PWDeditText"
+        android:hint="Password Goes Here" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PWDeditText"
+        android:layout_toStartOf="@+id/PWDeditText"
+        android:layout_marginTop="41dp"
+        android:id="@+id/loginbutton" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/PWDeditText"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2"
+        tools:text="Username" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/PWDeditText"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:text="New To The App , Register here !"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/registerLink"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="46dp"
+        android:id="@+id/resetbutton"
+        android:layout_alignBaseline="@+id/loginbutton"
+        android:layout_alignBottom="@+id/loginbutton"
+        android:layout_alignEnd="@+id/PWDeditText" />
+
+    <Button
+        android:text="Need Help, Contact Support !"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/contactSupportBtn"
+        android:layout_below="@+id/loginbutton"
+        android:layout_alignEnd="@+id/resetbutton" />
+
+    <Button
+        android:text="Visit WebSite !"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerLink"
+        android:layout_alignStart="@+id/contactSupportBtn"
+        android:id="@+id/websiteBtn"
+        android:layout_alignEnd="@+id/contactSupportBtn" />
+</RelativeLayout>
