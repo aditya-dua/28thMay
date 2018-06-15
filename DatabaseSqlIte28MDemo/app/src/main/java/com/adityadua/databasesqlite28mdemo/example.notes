@@ -1,0 +1,33 @@
+How the flow of app is working ?
+Classes :
+1) MainActivity  => you all know
+2) TablesClass => which is used to create the table and Database, where we are making the object of tables class
+3) DBHelper =>
+4) BookData
+5) Constants
+
+TableClass : SQLiteOpenHelper
+Functions :
+onCreate
+onUpgrade
+Constructor
+TablesClass tc = new TablesClass(....,....,...,...);
+As soon as you make the object of TAblesClass , you get the DB.
+
+DBHelper :
+Global Variables : SQLiteDatabase , TablesClass
+When its loaded , we create object by calling the constructor of TC db
+We open the database
+Once DB is opened , we actually Writabel or the Readable Instance
+
+
+
+UI :
+1) on Create : we check if we have content(anyy rows in DB) available
+        DB Layer : Database Pacakge : function getFullContent : which will return
+        me number  of rows in the DB.
+
+        response form the method goes to MainActivity , then we will check for count
+
+
+
